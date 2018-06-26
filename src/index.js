@@ -1,12 +1,9 @@
-import Vue from 'vue/dist/vue.esm.js';
+import Vue from 'vue';
 import Hello from './Hello.vue';
 
 document.addEventListener("DOMContentLoaded", () => {
     new Vue({
         el: "#app",
-        components: {
-            Hello
-        },
-        template: "<Hello/>"
+        render: h => h(Hello)
     })
 });
