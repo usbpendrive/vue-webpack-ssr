@@ -12,6 +12,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        overlay: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "template.html")
